@@ -18,9 +18,11 @@ We want to take the available data from world happiness reports to understand if
 Happiness is in the report - and hence in this analysis - is measured according to the principle of the Cantril Ladder as below:
 
 <p align="center">
-  <img src= />
+  <img src= /Images/cantril.png /> <br>
   <i> Cantril Ladder classification </i>
 </p>
+
+In this setting responses are combination of the respondent's currently perceived life satisfcation as well as their outlook on how this will change in the mid-term (5 years).
 
 ## Methodology
 ...
