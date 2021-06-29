@@ -1,4 +1,4 @@
-# How did COVID affect happiness levels across countries? :earth_americas: :rainbow: :mask:
+# What are relevant factors that drive a nation's happiness? :earth_americas: :rainbow:
 <p align="center">
   <img src="https://media.giphy.com/media/QuGdGFZ8QhKfRBWFzX/giphy.gif" />
 </p>
