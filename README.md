@@ -122,7 +122,14 @@ On the same time frame those nation's with a stable scores include a larger chun
 </p>
 
 <p align="center">
+  
+### Relevant factors driving happiness
+  
+From the relevant factors presented in the data section of the technical report, GDP, life expectancy and social support have the highest correlation with the ladder score. These are also the three variables that also show the largest movements and thereby have the highest impact on the ladder score overall. We cannot pinpoint which of the three is the leading indeicator, but it is a valid assumption to say it's GDP. So, while it is not the only indicator it seems to still be the most driving factor. Higher GDP gives you higher financial freedom, gives you better access to medical and social support, gives you a better basis to be happy.
+  
+On a side note however a positive trend is the freedom to make choices, which is showing a constant growth. This looks overall positive, but would needed to be sliced and diced into more detail to understand if objective freedom of choice has been captured.
  
+  
 <div class='tableauPlaceholder' id='viz1625129194884' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>  
 
 </p>
