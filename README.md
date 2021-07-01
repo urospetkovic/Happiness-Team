@@ -24,7 +24,7 @@ Picking up on this thought, this paper looks at the World Happiness Report to un
 
 Starting with its first publication in 2012, the World Happiness Report has been aiming to provide a standardised quantified view on happiness across the world's nations. Its goal is to prompt professionals in health, government, and economy into action by providing them with a high-level estimate of the impact their areas of expertise have on national happiness.
 
-We want to take the available data from world happiness reports to understand if there is a pattern between relevant COVID-19 metrics from the past year and the way world happiness has defeveloped as per report.
+We want to take the available data from world happiness reports to understand if there is a pattern between relevant COVID-19 metrics from the past year and the way world happiness has developed as per report.
 
 Happiness in the report - and hence in this analysis - is measured according to the principle of the Cantril Ladder as below:
 
@@ -33,7 +33,7 @@ Happiness in the report - and hence in this analysis - is measured according to 
   <i> Cantril Ladder classification </i>
 </p>
 
-In this setting responses are combination of the respondent's currently perceived life satisfcation as well as their outlook on how this will change in the mid-term (5 years).
+In this setting responses are combination of the respondent's currently perceived life satisfaction as well as their outlook on how this will change in the mid-term (5 years).
 
 ## Methodology
 We opted for an agile approach, where each day of the project was classified as a sprint to timebox our efforts.
@@ -42,7 +42,7 @@ Each sprint was dedicated to a specific topic area:
 
 <ol type = "1">
          <li>Sprint 1: Framing the research question & gathering/cleaning the data.</li>
-         <li>Sprint 2: EDA of the cleaned data set & refinment of the research question</li>
+         <li>Sprint 2: EDA of the cleaned data set & refinement of the research question</li>
          <li>Sprint 3: In-depth analysis, visualisation, and linear regression modelling</li>
          <li>Sprint 4: Documentation, presentation practice, and fine-tuning</li>
 </ol>
@@ -81,11 +81,11 @@ In order to do sound calculations based on the variables, outlier calculations h
 
 ## Key findings
 
-There is multiple ways to look at the world happiness report and likely noone will likely produce an exclusively best view. Metrics are taken in a bottom-up approach and are subjective in most cases, so we would likely need to contextualize results on a country level and drill down very deep to make solid and conclusive statement. Instead we choose to provide a proder high-level approach that can serve as food for thought.
+There are multiple ways to look at the world happiness report and likely no single one will likely produce an exclusively best view. Metrics are taken in a bottom-up approach and are subjective in most cases, so we would likely need to contextualize results on a country level and drill down very deep to make solid and conclusive statement. Instead we choose to provide a broader high-level approach that can serve as food for thought.
 
 ### Happiness global view
 
-The first thing that we can easily say, is that that regions of the world can be clustered into happier or less-happier according to their average ladder score. The Americas, Europe and Australia showing a higher ladder score on average, while the African continent and the Middle East seems to be mostly reprenseted in the lower end of the specture. Asia by itself is fairly split, with countries like Japan & Korea scoring high, while e.g. China only ranks moderately.
+The first thing that we can easily say, is that that regions of the world can be clustered into happier or less-happier according to their average ladder score. The Americas, Europe and Australia showing a higher ladder score on average, while the African continent and the Middle East seems to be mostly represented in the lower end of the spectrum. Asia by itself is fairly split, with countries like Japan & Korea scoring high, while e.g. China only ranks moderately.
 
 <p align="center">
 <div class='tableauPlaceholder' id='viz1625129949718' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;WorldMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;WorldMap' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;WorldMap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>  
@@ -94,16 +94,16 @@ The first thing that we can easily say, is that that regions of the world can be
 
 ### Happiness regional view
 
-Initially this could lead to the interpretations that the wealthy nations of this world have higher amount of happiness and indeed the correlation to GDP is something that we have to aknowledge on basis of the initial EDA. However, a first look at the average ladder score per region hints otherwise. Latin America & the Carribeans rank better than other regions with a compereably stronger economy such as East Asia, implying that economic strenght is not the single driving factor for an nation's happiness.
+Initially this could lead to the interpretations that the wealthy nations of this world have higher amount of happiness and indeed the correlation to GDP is something that we have to acknowledge on basis of the initial EDA. However, a first look at the average ladder score per region hints otherwise. Latin America & the Carribbean's rank better than other regions with a comparably stronger economy such as East Asia, implying that economic strength is not the single driving factor for a nation's happiness.
 
 <p align="center">
 <div class='tableauPlaceholder' id='viz1625128853999' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;LadderScorebyRegion&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;LadderScorebyRegion' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;LadderScorebyRegion&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>
 
 </p>
 
-### Winners and loosers
+### Winners and losers
 
-Despite the positive note that the above visusalisation carries, it is pretty much undeniable that there is regions and countries that are clearly worse off. For the most part this countries are from the African continent, with the war-torn Afghanistan being the only exception in the only exception. Looking at the top 10 there is no real surprise, with northern European countries performing in accordance of their usual perception of being the world's happiest.
+Despite the positive note that the above visualisation carries, it is pretty much undeniable that there is regions and countries that are clearly worse off. For the most part these countries are from the African continent, with the war-torn Afghanistan being the only exception in the only exception. Looking at the top 10 there is no real surprise, with northern European countries performing in accordance of their usual perception of being the world's happiest.
 
 <p align="center">
 <div class='tableauPlaceholder' id='viz1625129138172' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;TopandBottom10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;TopandBottom10' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;TopandBottom10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div> 
@@ -117,7 +117,7 @@ To shed a positive light on the above ranking, we can however see that those nat
 
 </p>
 
-On the same time frame those nation's with a stable scores include a larger chunk of the Top 10. This does not mean they are exclusive populating this ranking (there are e.g. lower ranking nations), but countries performing better on the ladder score (moderate or above) tend to be able to hold the position as well. This can serve as implication on the nation's stability - economically and otherwise - to be relevant for a nation's long-term happiness
+On the same time frame those nations with a stable score are included more frequently in the Top 10. This does not mean they are exclusive populating this ranking (there are e.g. lower ranking nations), but countries performing better on the ladder score (moderate or above) tend to be able to hold the position as well. This can serve as implication on the nation's stability - economically and otherwise - to be relevant for a its citizens' long-term happiness
 
 <p align="center">
 <div class='tableauPlaceholder' id='viz1625063041225' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;Leastmovingcountries&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Countrymovementsinhappinessreport&#47;Leastmovingcountries' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;Leastmovingcountries&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>   
@@ -128,9 +128,9 @@ On the same time frame those nation's with a stable scores include a larger chun
   
 ### Relevant factors driving happiness
   
-From the relevant factors presented in the data section of the technical report, GDP, life expectancy and social support have the highest correlation with the ladder score. These are also the three variables that also show the largest movements and thereby have the highest impact on the ladder score overall. We cannot pinpoint which of the three is the leading indeicator, but it is a valid assumption to say it's GDP. So, while it is not the only indicator it seems to still be the most driving factor. Higher GDP gives you higher financial freedom, gives you better access to medical and social support, gives you a better basis to be happy.
+From the relevant factors presented in the data section of the technical report, GDP, life expectancy and social support have the highest correlation with the ladder score. These are also the three variables that also show the largest movements and thereby have the highest impact on the ladder score overall. We cannot pinpoint which of the three is the leading indicator, but it is a valid assumption to say it's GDP. So, while it is not the only indicator it seems to still be the most driving factor. Higher GDP gives you higher financial freedom, gives you better access to medical and social support, gives you a better basis to be happy.
   
-On a side note however a positive trend is the freedom to make choices, which is showing a constant growth. This looks overall positive, but would needed to be sliced and diced into more detail to understand if objective freedom of choice has been captured.
+On a side note however a positive trend is the freedom to make choices, which is showing a constant growth. This looks overall positive but would need to be sliced and diced into more detail to understand if objective freedom of choice has been captured.
  
   
 <div class='tableauPlaceholder' id='viz1625129194884' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>  
@@ -146,6 +146,6 @@ That is with the variables at hand, we can actually predict a good proportion of
 
 ## Conclusion
 
-While this is not truly an eye opener, this analysis somewhat support the train of thought that money alone cannot buy you happiness, but the lack of it may buy you misery. GDP is the driving factor for the happiness ladder score and shows the most far-fetching correlation to all other relevant factors.
+While this is not truly an eye opener, this analysis somewhat supports the train of thought that money alone cannot buy you happiness, but the lack of it may buy you misery. GDP is the driving factor for the happiness ladder score and shows the most far-fetching correlation to all other relevant factors.
 
-Hence, countries achieving a higher level of GDP, achieive more stability and can maintain a higher ladder score. Or at least that would be the implication of this high-level analysis. To become more concise on the topic, it would be necessary to look at the relevant variables on a nation-level to really provide the relevant context and understand the interplay of GDP, health, social support and happiness a bit more. That, however will be the focus of a more detailed study by someone, sometime in the future.
+Hence, countries achieving a higher level of GDP, achieve more stability and can maintain a higher ladder score. Or at least that would be the implication of this high-level analysis. To become more concise on the topic, it would be necessary to look at the relevant variables on a nation-level to really provide the relevant context and understand the interplay of GDP, health, social support and happiness a bit more. That, however, will be the focus of a more detailed study by someone, sometime in the future.
