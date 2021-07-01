@@ -8,6 +8,7 @@
 - [Methodology](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#background)
 - [Data](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#methodology)
 - [Key findings](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#key-findings)
+- [Conclusion](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#Conclusion)
 
 ## Background
 
@@ -136,12 +137,15 @@ On a side note however a positive trend is the freedom to make choices, which is
 
 </p>
 
+
+### Can we predict happiness?
+
+Using the Linear Regression algorithm from Scikit-learn library we trained a machine learning model to predict the 'ladder score' with accuracy of 74%. Standard scaler was used for scaling the numerical values and Label Encoder for encoding categorical values to numeric.
+
+That is with the variables at hand, we can actually predict a good proportion of the test-group of ladder scores.
+
 ## Conclusion
 
 While this is not truly an eye opener, this analysis somewhat support the train of thought that money alone cannot buy you happiness, but the lack of it may buy you misery. GDP is the driving factor for the happiness ladder score and shows the most far-fetching correlation to all other relevant factors.
 
 Hence, countries achieving a higher level of GDP, achieive more stability and can maintain a higher ladder score. Or at least that would be the implication of this high-level analysis. To become more concise on the topic, it would be necessary to look at the relevant variables on a nation-level to really provide the relevant context and understand the interplay of GDP, health, social support and happiness a bit more. That, however will be the focus of a more detailed study by someone, sometime in the future.
-
-### Can we predict happiness?
-
-Using the Linear Regression algorithm from Scikit-learn library we trained a machine learning model to predict the 'ladder score' with accuracy of 74%. Standard scaler was used for scaling the numerical values and Label Encoder for encoding categorical values to numeric. 
