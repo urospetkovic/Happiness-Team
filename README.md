@@ -7,7 +7,6 @@
 - [Background](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#background)
 - [Methodology](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#background)
 - [Data](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#methodology)
-- [Visualization](https://github.com/Novi0106/Happiness-Team/blob/main/README.mdn#visualisation)
 - [Key findings](https://github.com/Novi0106/Happiness-Team/blob/main/README.md#key-findings)
 
 ## Background
@@ -22,11 +21,11 @@ Picking up on this thought, this paper looks at the World Happiness Report to un
 
 ## The World Happiness Report
 
-Starting with its first publication in 2012, the World Happiness Report has been aiming to provide a standardised quantified view on happiness across the world's nations. It's goal is to prompt professionals in health, government, and economy into action by providing them with a high-level estimate of the impact their areas of expertise have on national happiness.
+Starting with its first publication in 2012, the World Happiness Report has been aiming to provide a standardised quantified view on happiness across the world's nations. Its goal is to prompt professionals in health, government, and economy into action by providing them with a high-level estimate of the impact their areas of expertise have on national happiness.
 
 We want to take the available data from world happiness reports to understand if there is a pattern between relevant COVID-19 metrics from the past year and the way world happiness has defeveloped as per report.
 
-Happiness is in the report - and hence in this analysis - is measured according to the principle of the Cantril Ladder as below:
+Happiness in the report - and hence in this analysis - is measured according to the principle of the Cantril Ladder as below:
 
 <p align="center">
   <img src= /Images/cantril.png /> <br>
@@ -77,7 +76,7 @@ To check for (perfect) multicollinearity, a heatmap has been generated in Python
 
 In order to do sound calculations based on the variables, outlier calculations have been checked. This has been done by making a boxplot for each of the variables. From this it is clear that perception of corruption and generosity have somewhat higher outliers, but no high levels that needed to be addressed. 
 
-## Key findings & visualisation
+## Key findings
 
 There is multiple ways to look at the world happiness report and likely noone will likely produce an exclusively best view. Metrics are taken in a bottom-up approach and are subjective in most cases, so we would likely need to contextualize results on a country level and drill down very deep to make solid and conclusive statement. Instead we choose to provide a proder high-level approach that can serve as food for thought.
 
