@@ -19,7 +19,7 @@ So, when many individuals are struggling, how then can we improve happiness leve
 
 Picking up on this thought, this paper looks at the World Happiness Report to understand the most prevalent quantitative definition of happiness and which factors play into happiness on a national level. Our goal - thereby - is to understand what the relevant factors are to allow a better understanding of where potential actions could follow.
 
-## The World Happiness Report
+### The World Happiness Report
 
 Starting with its first publication in 2012, the World Happiness Report has been aiming to provide a standardised quantified view on happiness across the world's nations. Its goal is to prompt professionals in health, government, and economy into action by providing them with a high-level estimate of the impact their areas of expertise have on national happiness.
 
@@ -47,6 +47,8 @@ Each sprint was dedicated to a specific topic area:
 </ol>
 
 To keep ahead of the schedule, we decided to - in addition to the usual stand-up - include a morning stand-up at 9am to split the work. This helped us to get a better understanding of whether we might face any potential blockers that we would then need to bring up with our mentor. 
+
+Our Kanban-Board, including all completed tickets can be found here: https://trello.com/b/kFslQgNn/the-happiness-team.
 
 ## Data
 Variables: as we might already know, not one factor can explain the underlying happiness of a person or nation, that is why different variables are used to calculate the happiness scores. The authors of the World Happiness Report have found seven key factors that could likely explain the levels of happiness:
@@ -134,6 +136,8 @@ On a side note however a positive trend is the freedom to make choices, which is
 
 </p>
 
-### Can we predict happiness?
+## Conclusion
 
-Using linear regression algorithm from Scik-Learn library we trained a model to predict the 'ladder score' with accuracy of 74%. Standard Scaler was used to scale numeric values and Label Encoder to encode the categorical values to numeric.
+While this is not truly an eye opener, this analysis somewhat support the train of thought that money alone cannot buy you happiness, but the lack of it may buy you misery. GDP is the driving factor for the happiness ladder score and shows the most far-fetching correlation to all other relevant factors.
+
+Hence, countries achieving a higher level of GDP, achieive more stability and can maintain a higher ladder score. Or at least that would be the implication of this high-level analysis. To become more concise on the topic, it would be necessary to look at the relevant variables on a nation-level to really provide the relevant context and understand the interplay of GDP, health, social support and happiness a bit more. That, however will be the focus of a more detailed study by someone, sometime in the future.
