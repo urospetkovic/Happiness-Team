@@ -36,7 +36,18 @@ Happiness is in the report - and hence in this analysis - is measured according 
 In this setting responses are combination of the respondent's currently perceived life satisfcation as well as their outlook on how this will change in the mid-term (5 years).
 
 ## Methodology
-...
+We opted for an agile approach, where each day of the project was classified as a sprint to timebox our efforts.
+
+Each sprint was dedicated to a specific topic area:
+
+<ol type = "1">
+         <li>Sprint 1: Framing the research question & gathering/cleaning the data.</li>
+         <li>Sprint 2: EDA of the cleaned data set & refinment of the research question</li>
+         <li>Sprint 3: In-depth analysis, visualisation, and linear regression modelling</li>
+         <li>Sprint 4: Documentation, presentation practice, and fine-tuning</li>
+</ol>
+
+To keep ahead of the schedule, we decided to - in addition to the usual stand-up - include a morning stand-up at 9am to split the work. This helped us to get a better understanding of whether we might face any potential blockers that we would then need to bring up with our mentor. 
 
 ## Data
 Variables: as we might already know, not one factor can explain the underlying happiness of a person or nation, that is why different variables are used to calculate the happiness scores. The authors of the World Happiness Report have found seven key factors that could likely explain the levels of happiness:
@@ -46,26 +57,45 @@ Variables: as we might already know, not one factor can explain the underlying h
          <li>Social support is also a key variable, this is based on a yes or no answer to the following question: “If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?” Based on the yes/no answer a dummy variable is created, where yes equals 1 and a 0 has been allocated to a no. Based on these scores, an average score is calculated, which represents the level of social support. </li>
          <li>The third variable is healthy life expectancy, which stands for the number of years a newborn is expected to live. This is based on 100 different factors, calculated and maintained by the World Health Organization. </li>
          <li>Freedom to make life choices, similar to the social support factor, is also answered using one question: “Are you satisfied or dissatisfied with your freedom to choose what you do with your life?” to which a dummy variable has been created as well. </li>
-         <li>In addition to this, the generosity factor is also calculated based on the following question: “Have you donated money to a charity in the past month?”.
-Perceptions of corruption are averaged based on two questions: “Is corruption widespread throughout the government or not?” & “Is corruption widespread within businesses or not?”</li>
+         <li>In addition to this, the generosity factor is also calculated based on the following question: “Have you donated money to a charity in the past month?”.</li>
+         <li>Perceptions of corruption are averaged based on two questions: “Is corruption widespread throughout the government or not?” & “Is corruption widespread within businesses or not?”</li>
          <li>The last variable is the ladder score, which is explained above.</li>
 </ol>
 
+To gather the dataset, data from the World Happiness Report is used. Two different datasets have been cleaned and merged. One dataset contained data from 2005 - 2019, and the other dataset  from 2020-2021. These datasets have been merged with Python in Jupyter notebook. However, as mentioned before, the World Happiness Report was published from 2012 onward, which is why data from before 2012 is omitted.
 
-## Visualisation
+Furthermore, to show insights in the different happiness levels in regions, a column with regions is added. To get an insight of the distributions of the variables, histograms are generated. Based on the histograms, it is clear that ladder score is almost normally distributed. All the other variables are skewed to the left (negatively skewed), except for perceptions of corruption (positively skewed).
+
+To check for (perfect) multicollinearity, a heatmap has been generated in Python. In this heatmap it is clear that there are no cases of (perfect) multicollinearity, although there are high correlations between the variables. 
+
 
 <p align="center">
-<div class='tableauPlaceholder' id='viz1625062850887' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;TopWorstmovers&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Countrymovementsinhappinessreport&#47;TopWorstmovers' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;TopWorstmovers&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div> 
+  <img src= /Images/HEATMAP.png /> <br>
+  <i> Correlation heatmap world happiness data </i>
 </p>
 
-<p align="center">
-  <i> Top & worst movers </i>
-</p>
 
-<p align="center">
+In order to do sound calculations based on the variables, outlier calculations have been checked. This has been done by making a boxplot for each of the variables. From this it is clear that perception of corruption and generosity have somewhat higher outliers, but no high levels that needed to be addressed. 
+
+## Key findings & visualisation
+
+<div class='tableauPlaceholder' id='viz1625128635916' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;WorldMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;WorldMap' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;WorldMap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div> 
+
+
+
+<div class='tableauPlaceholder' id='viz1625128853999' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;LadderScorebyRegion&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;LadderScorebyRegion' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;LadderScorebyRegion&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>
+
+
+<div class='tableauPlaceholder' id='viz1625129138172' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;TopandBottom10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;TopandBottom10' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;TopandBottom10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div> 
+
+
+
+<div class='tableauPlaceholder'; margin: 0 auto; id='viz1625062850887'; style='position: absolute'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;TopWorstmovers&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Countrymovementsinhappinessreport&#47;TopWorstmovers' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;TopWorstmovers&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div> 
+
+
+
 <div class='tableauPlaceholder' id='viz1625063041225' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;Leastmovingcountries&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Countrymovementsinhappinessreport&#47;Leastmovingcountries' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countrymovementsinhappinessreport&#47;Leastmovingcountries&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>   
-  <i> Countries with least movement </i>
-</p>
 
-## Key findings
-...
+
+
+<div class='tableauPlaceholder' id='viz1625129194884' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>  
