@@ -72,7 +72,7 @@ To check for (perfect) multicollinearity, a heatmap has been generated in Python
 
 
 <p align="center">
-  <img src= /Images/HEATMAP.png /> <br>
+  <img src= /Images/HEATMAP_NEW.png /> <br>
   <i> Correlation heatmap world happiness data </i>
 </p>
 
