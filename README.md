@@ -103,7 +103,7 @@ Initially this could lead to the interpretations that the wealthy nations of thi
 
 ### Winners and losers
 
-Despite the positive note that the above visualisation carries, it is pretty much undeniable that there is regions and countries that are clearly worse off. For the most part these countries are from the African continent, with the war-torn Afghanistan being the only exception in the only exception. Looking at the top 10 there is no real surprise, with northern European countries performing in accordance of their usual perception of being the world's happiest.
+Despite the positive note that the above visualisation carries, it is pretty much undeniable that there are regions and countries that are clearly worse off. For the most part these countries are from the African continent, with the war-torn Afghanistan being the only exception. Looking at the top 10 there is no real surprise, with northern European countries performing in accordance of their usual perception of being the world's happiest.
 
 <p align="center">
 <div class='tableauPlaceholder' id='viz1625129138172' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;TopandBottom10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;TopandBottom10' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;TopandBottom10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div> 
@@ -136,13 +136,6 @@ On a side note however a positive trend is the freedom to make choices, which is
 <div class='tableauPlaceholder' id='viz1625129194884' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_16250702823590&#47;OtherVariablesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='de-DE' /></object></div>  
 
 </p>
-
-
-### Can we predict happiness?
-
-Using the Linear Regression algorithm from Scikit-learn library we trained a machine learning model to predict the 'ladder score' with accuracy of 74%. Standard scaler was used for scaling the numerical values and Label Encoder for encoding categorical values to numeric.
-
-That is with the variables at hand, we can actually predict a good proportion of the test-group of ladder scores.
 
 ## Conclusion
 
